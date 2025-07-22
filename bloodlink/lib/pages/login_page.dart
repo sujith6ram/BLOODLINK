@@ -18,7 +18,7 @@ class _SigninState extends State<Signin> {
   final usernameController = TextEditingController();
   final passwordController = TextEditingController();
   final url =
-      'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyA_GcisUvxJxbv-hEuQprCLoyApcsdnWbY';
+      '<FIREBASE REST API LINK>';
 
   Future<void> _Signin() async {
     try {
