@@ -1,0 +1,24 @@
+explanation of the functions
+------donor----------------
+registerDonor => registers donor info(1)
+donateHistory => display history of donors donations with status(5)(change no to string)
+getApprovedRequests => display the admin approved request of patient(11)(select th req var only)
+respondToRequest => donor has to accept or decline the request(12)
+
+-----patient---------------
+getEligibleDonors => displays a list of eligible donors acc to the place and bg(6)(select th req var only)
+requestBlood => patient req blood(7)
+getRequestStatus => gives the status of the requested blood(8)(10 fr checking)(change no to string)
+
+-----admin-----------------
+donateBlood => registers that donor donated the blood(4 if event)or(13 after accepted req)
+approveRequest => approve patient req(assign req id)(9)
+viewDonors => admin can view the donors with few details
+viewPatients => admin can view patients 
+addBorH => add suppliers or add hospitals to the respective array(where true for B and false for H)
+trackBlood => track the bloodunit movement of the donor(change no to string)
+setBloodLocation => the rfid set the tracking value
+setStatus => set availability,verified, fulfill(0==available,1==verfied,2==fulfill)
+|-setAvailability => set the available status for the donor which denotes the donor donated blood(2)
+|-setVerify => set verfied for the pure blood to be donated(3)
+|-setFulfill => the end point of the donation where hospital has to mark it as received(last at hospital)

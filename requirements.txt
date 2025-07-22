@@ -1,0 +1,21 @@
+to run this project:
+first install the dependencies
+1.install flutter packages
+	>run flutter pub get
+2.install Solidity
+3.install Truffle and Ganache
+4.install Nodejs
+
+how to run this project:
+1.first compile the smartcontract and migrate it
+	>truffle compile
+	>truffle migrate
+2.then, run the admin_app and bloodlink app
+3.connect the components as per the circuit diagram and upload the program.
+4.also run the nodejs server, with the components connected.
+
+
+Flow of the project:
+1. register donor and patient in the bloodlink app using the ganache account privatekeys.
+2. after registration, go to the admin app and make the donor available and verified.
+3.

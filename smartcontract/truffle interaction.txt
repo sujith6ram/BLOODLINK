@@ -1,0 +1,57 @@
+1️⃣ Open Truffle Console
+First, navigate to your Truffle project directory and run:
+
+truffle console --network development
+
+This starts a Truffle interactive shell connected to your local Ganache blockchain.
+
+2️⃣ Get the Deployed Smart Contract Instance
+Once inside the Truffle console, get the deployed contract instance using:
+
+const contract = await BloodLink.deployed();
+
+Replace MyContract with the actual contract name.
+
+3️⃣ Call a view Function (Read Data)
+For getter functions (which do not modify blockchain state, i.e., view functions), use .call():
+
+const location = await contract.getLocation("RFID_TAG_HERE");
+console.log(location);
+
+This reads the location of the given RFID tag.
+
+4️⃣ Call a nonpayable Function (Write Data)
+For setter functions (which modify blockchain state), use .send() along with the account making the transaction:
+
+const accounts = await web3.eth.getAccounts();
+await contract.updateLocation("RFID_TAG_HERE", "New_Location", { from: accounts[0] });
+
+This updates the location of the RFID tag on the blockchain.
+
+5️⃣ Check Events (Transaction Logs)
+If your function emits an event (like LocationUpdated), you can listen for it:
+
+contract.getPastEvents("LocationUpdated", { fromBlock: 0, toBlock: "latest" })
+  .then(events => console.log(events))
+  .catch(err => console.error(err));
+
+🛠 Example Workflow
+
+truffle console --network development
+
+const contract = await MyContract.deployed();
+await contract.updateLocation("83454AFA", "Warehouse B", { from: (await web3.eth.getAccounts())[0] });
+const location = await contract.getLocation("83454AFA");
+console.log("Updated Location:", location);
+
+This will: ✅ Update the RFID tag location
+✅ Retrieve and print the updated location
+
+Now, test it on Ganache and let me know if you need any fixes! 🚀
+
+
+
+
+
+
+
