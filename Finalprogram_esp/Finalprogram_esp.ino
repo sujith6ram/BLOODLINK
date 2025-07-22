@@ -6,12 +6,12 @@
 #include <DallasTemperature.h>
 
 // WiFi credentials
-#define WIFI_SSID "Galaxy M31D07A"
-#define WIFI_PASSWORD "nqqd5512"
+#define WIFI_SSID "<WIFI Name>"
+#define WIFI_PASSWORD "<WIFI password>"
 
 // Firebase URLs
-#define FIREBASE_RFID_URL "https://iot-app-60d05-default-rtdb.firebaseio.com/rfid_data.json"
-#define FIREBASE_TEMP_URL "https://iot-app-60d05-default-rtdb.firebaseio.com/TemperatureSensor.json"
+#define FIREBASE_RFID_URL "<firebase RFID database link>"
+#define FIREBASE_TEMP_URL "<firebase temperature database link>"
 
 // RFID Pinsqq/
 #define SS_1  5    // RFID 1 SS pin
