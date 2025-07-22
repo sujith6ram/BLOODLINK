@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 import 'receive_page.dart';
 import 'donor_page.dart'; // Import the DonePage
 
-// sujith@gmail.com
-// sujithram
+
 class DonorReceivePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
