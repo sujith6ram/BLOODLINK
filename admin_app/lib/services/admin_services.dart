@@ -7,12 +7,12 @@ import 'package:web_socket_channel/io.dart';
 import 'package:flutter/services.dart';
 
 class AdminService extends ChangeNotifier {
-  final String rpcUrl = "http://192.168.210.244:7545";
-  final String wsUrl = "ws://192.168.210.244:7545/";
+  final String rpcUrl = "<RPCURL FROM GANACHE>";
+  final String wsUrl = "<WSURL FROM GANACHE>";
   final String adminPrivateKey =
-      "0x0f1e710a76cd900831e3703cb6a84e746f272899d1ee6e1768ae7a1061b64043"; // Admin's private key
+      "<>"; // Admin's private key
   final String adminAddress =
-      "0xFf165599E30f8543c01fBBE4a5e9094D660cf514"; // Admin's address
+      "<>"; // Admin's address
 
   Web3Client? client;
   Credentials? credentials;
@@ -72,7 +72,7 @@ class AdminService extends ChangeNotifier {
 
   Future<void> getABI() async {
     String abiFile = await rootBundle.loadString(
-        'E:/temp flutter/final_year_project/smartcontract/build/contracts/BloodLink.json');
+        'E:/smartcontract/build/contracts/BloodLink.json');
     final jsonABI = jsonDecode(abiFile);
     if (jsonABI["networks"] == null ||
         jsonABI["networks"]["5777"] == null ||
