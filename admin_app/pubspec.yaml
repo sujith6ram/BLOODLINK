@@ -34,7 +34,7 @@ flutter:
    - lib/Images/adminlogo.jpg
    - lib/components/
    - assets/BloodLink.json
-   - E:/temp flutter/final_year_project/smartcontract/build/contracts/BloodLink.json
+   - E:/smartcontract/build/contracts/BloodLink.json
   #  - images/a_dot_ham.jpeg
   # fonts:
   #   - family: Schyler
