@@ -3,10 +3,10 @@ require("dotenv").config();
 const { Web3 } = require("web3");
 
 // Use Ganache as Web3 provider
-const web3 = new Web3("http://192.168.234.244:7545");
+const web3 = new Web3("GANACHE URL");
 
 // Import the compiled contract ABI & address from Truffle
-const contractJSON = require("E:/temp flutter/final_year_project/smartcontract/build/contracts/BloodLink.json");
+const contractJSON = require("E:/smartcontract/build/contracts/BloodLink.json");
 
 // Extract the contract ABI and deployed address
 const contractABI = contractJSON.abi;
@@ -17,9 +17,9 @@ const contract = new web3.eth.Contract(contractABI, contractAddress);
 
 // RFID Tag to Ethereum Address Mapping
 const rfidToEthAddress = {
-  "83454AFA": "0x79B2FB26A03765422473C31A43AbD68423536e75",
-  "92BC57D4": "0xF4954Ec6dCb29B08733Ec18C6ff4AcFDDf0125D7",
-  "F3A91B67": "0x16049d6F1ca3b96CaCe4cce37AABc3b175F64bb0"
+  "RFID 1 CODE": "ADDRESS 1 FROM GANACHE",
+  "RFID 2 CODE": "ADDRESS 2 FROM GANACHE",
+  "RFID 3 CODE": "ADDRESS 3 FROM GANACHE"
 };
 
 // Use the first Ganache account as the sender
