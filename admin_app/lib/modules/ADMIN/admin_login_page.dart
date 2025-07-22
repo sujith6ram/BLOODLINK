@@ -16,7 +16,7 @@ class _AdminLoginState extends State<AdminLogin> {
   final usernameController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
   final url =
-      "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDVo0WT010PBrCkzW33RyC2iucQF2kCQFQ";
+      "PASTE REST API LINK HERE";
 
   Future<void> _Adminlogin() async {
     final email = usernameController.text;
