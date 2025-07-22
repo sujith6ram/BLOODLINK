@@ -30,7 +30,7 @@ class _AddUserPageState extends State<AddUserPage> {
   bool isAuthorized = false;
 
   final url =
-      'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyA_GcisUvxJxbv-hEuQprCLoyApcsdnWbY';
+      '<FIREBASE REST API LINK>';
 
   Future<void> registerPage() async {
     if (!_validateInputs()) return;
