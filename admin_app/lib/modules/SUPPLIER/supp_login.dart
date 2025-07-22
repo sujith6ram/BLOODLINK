@@ -16,7 +16,7 @@ class _SuppLoginState extends State<SuppLogin> {
   final usernameController = TextEditingController();
   final passwordController = TextEditingController();
   final url =
-      "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDVo0WT010PBrCkzW33RyC2iucQF2kCQFQ";
+      "<FIREBASE REST API LINK>";
 
   Future<void> _Hosplogin() async {
     final email = usernameController.text;
