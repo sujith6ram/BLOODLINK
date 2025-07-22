@@ -65,8 +65,8 @@ module.exports = {
     // options below to some value.
     //
     development: {
-     host: "192.168.210.244",     // Localhost (default: none)
-     port: 7545,            // Standard Ethereum port (default: none)
+     host: "",     // Localhost (default: none)
+     port: ,            // Standard Ethereum port (default: none)
      network_id: "*",       // Any network (default: none)
     },
     contracts_directory: "./smartcontract/contracts/",
