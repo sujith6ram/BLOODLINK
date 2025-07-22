@@ -17,7 +17,7 @@ class _TrackTempPageState extends State<TrackTempPage> {
   Future<void> fetchTemperature() async {
     final response = await http.get(
       Uri.parse(
-          "https://iot-app-60d05-default-rtdb.firebaseio.com/TemperatureSensor.json"),
+          "PASTE FIREBASE LINK FOR TEMPERATURE"),
     );
 
     if (response.statusCode == 200) {
